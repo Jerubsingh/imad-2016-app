@@ -10,16 +10,16 @@ app.get('/', function (req, res) {
 });
 
 aap.get('/article-one', function (req, res){
-   res.sendFile('Article one'); 
+  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
 
 
 aap.get('/article-two', function (req, res){
-   res.sendFile('Article two'); 
+  res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 aap.get('/article-three', function (req, res){
-   res.sendFile('Article three'); 
+  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
